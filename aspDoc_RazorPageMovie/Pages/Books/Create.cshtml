@@ -1,0 +1,34 @@
+﻿@page
+@model aspDoc_RazorPageMovie.Pages.Books.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<div style="border: 1px black solid; border-radius:10px">
+    <div class="container">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Book.Name">book name : </label>
+                <input asp-for="Book.Name" class="form-control" aria-describedby="emailHelp" placeholder="book name"/>
+                <small id="nameHelp" class="form-text text-muted">the name of the book you want add to the data base</small>
+                <span asp-validation-for="Book.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Book.Author">book Author : </label>
+                <input asp-for="Book.Author" class="form-control" aria-describedby="emailHelp" placeholder="book name"/>
+                <small id="nameHelp" class="form-text text-muted">The person who write this book!</small>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary btn-group-sm"/>
+                <a asp-page="Index" class="btn btn-outline-success"> Back to list </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section scripts{ 
+    @{await Html.RenderPartialAsync("Shared/_ValidationScriptsPartial");}
+}

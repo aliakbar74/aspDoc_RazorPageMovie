@@ -1,0 +1,13 @@
+{
+  "User": {
+    "Id": 2817342,
+    "Username": "aliakbar74",
+    "Name": "aliakbar maleki",
+    "Email": "mraliakbarmaleki@gmail.com",
+    "AvatarUrl": "https://secure.gravatar.com/avatar/ea725f5511993aeb28d48c4696af1c65?s=80&d=identicon",
+    "PrivateToken": "270f1b6b9d6d74f48ba1e1892e9660b31646aa84b9e3e788b00e4cd47f2365cc",
+    "Host": "https://gitlab.com",
+    "TwoFactorEnabled": false,
+    "ApiVersion": 3
+  }
+}

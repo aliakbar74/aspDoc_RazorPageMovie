@@ -1,0 +1,15 @@
+﻿@page
+@model aspDoc_RazorPageMovie.Pages.Books.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Books</h1>
+@if (Model.Books.Any()) {
+    
+}
+else {
+    <p>There is no book</p>
+}
+
+<a asp-page="Create" class="btn btn-primary">Create</a>
