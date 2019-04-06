@@ -35,3 +35,4 @@ D:\Prj\ASP\aspDoc_RazorPageMovie\aspDoc_RazorPageMovie\obj\Debug\netcoreapp2.2\R
 D:\Prj\ASP\aspDoc_RazorPageMovie\aspDoc_RazorPageMovie\obj\Debug\netcoreapp2.2\Razor\Pages\Movies\Index.g.cshtml.cs
 D:\Prj\ASP\aspDoc_RazorPageMovie\aspDoc_RazorPageMovie\obj\Debug\netcoreapp2.2\Razor\Pages\Books\Index.g.cshtml.cs
 D:\Prj\ASP\aspDoc_RazorPageMovie\aspDoc_RazorPageMovie\obj\Debug\netcoreapp2.2\Razor\Pages\Books\Create.g.cshtml.cs
+D:\Prj\ASP\aspDoc_RazorPageMovie\aspDoc_RazorPageMovie\obj\Debug\netcoreapp2.2\Razor\Pages\Books\Edit.g.cshtml.cs

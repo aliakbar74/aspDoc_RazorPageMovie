@@ -49,7 +49,6 @@ namespace aspDoc_RazorPageMovie {
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
             app.UseMvc();
         }
     }

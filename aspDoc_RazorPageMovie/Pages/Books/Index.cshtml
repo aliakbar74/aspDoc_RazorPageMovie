@@ -4,12 +4,51 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Books</h1>
-@if (Model.Books.Any()) {
-    
-}
-else {
-    <p>There is no book</p>
+@if (Model.Message != null)
+{
+    <div class="alert alert-info alert-dismissible">
+        <button type="button" class="close" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        @Model.Message
+    </div>
 }
 
+<h1>Books</h1>
+<br/>
+<form method="post">
+@if (Model.Books.Any())
+ {
+     <table class="table">
+         <tr>
+             <th>
+                 @Html.DisplayNameFor(m => m.Books.FirstOrDefault().Name)
+             </th>
+             <th>
+                 @Html.DisplayNameFor(m => m.Books.FirstOrDefault().Author)
+             </th>
+         </tr>
+          @foreach (var book in Model.Books)
+             {
+                 <tr>
+                     <td>@Html.DisplayName(book.Name)</td>
+                     <td>@Html.DisplayName(book.Author)</td>
+                     <td>
+                         <button asp-page-handler="Delete" asp-route-id=@book.Id class="btn btn-danger btn-sm">Delete</button>
+                         <button asp-page="Edit" asp-route-id=@book.Id class="btn btn-secondary btn-sm">Edit</button>
+                     @* </td> *@
+                     @* <td> *@
+                     </td>
+                 </tr>
+             }
+         </table>
+     <br/>
+
+ }
+ else
+ {
+     <p>There is no book</p>
+ }
+
 <a asp-page="Create" class="btn btn-primary">Create</a>
+</form>

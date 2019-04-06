@@ -11,13 +11,16 @@ namespace aspDoc_RazorPageMovie.Pages.Books
     public class CreateModel : PageModel
     {
         private aspDoc_RazorPageMovieContext _db;
+        [TempData]
+        public string Message { get; set; }
+
+        [BindProperty]
+        public Book Book { get; set; }
 
         public CreateModel(aspDoc_RazorPageMovieContext db)
         {
             _db = db;
         }
-        [BindProperty]
-        public Book Book { get; set; }
         public void OnGet()
         {
 
@@ -32,7 +35,8 @@ namespace aspDoc_RazorPageMovie.Pages.Books
 
             _db.Book.Add(Book);
             await _db.SaveChangesAsync();
-            return Page();
+            Message = "Book has been created successfuly!";
+            return RedirectToPage("./Index");
         }
     }
 }

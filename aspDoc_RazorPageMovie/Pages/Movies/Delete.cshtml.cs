@@ -11,9 +11,9 @@ namespace aspDoc_RazorPageMovie.Pages.Movies
 {
     public class DeleteModel : PageModel
     {
-        private readonly aspDoc_RazorPageMovie.Models.aspDoc_RazorPageMovieContext _context;
+        private readonly aspDoc_RazorPageMovieContext _context;
 
-        public DeleteModel(aspDoc_RazorPageMovie.Models.aspDoc_RazorPageMovieContext context)
+        public DeleteModel(aspDoc_RazorPageMovieContext context)
         {
             _context = context;
         }

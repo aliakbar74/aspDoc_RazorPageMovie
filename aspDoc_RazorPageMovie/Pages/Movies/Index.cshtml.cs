@@ -11,9 +11,9 @@ namespace aspDoc_RazorPageMovie.Pages.Movies
 {
     public class IndexModel : PageModel
     {
-        private readonly aspDoc_RazorPageMovie.Models.aspDoc_RazorPageMovieContext _context;
+        private readonly aspDoc_RazorPageMovieContext _context;
 
-        public IndexModel(aspDoc_RazorPageMovie.Models.aspDoc_RazorPageMovieContext context)
+        public IndexModel(aspDoc_RazorPageMovieContext context)
         {
             _context = context;
         }
